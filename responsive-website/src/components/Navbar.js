@@ -26,8 +26,9 @@ function Navbar() {
         <nav classNName="navbar">
             <div className="navbar-conntainer">
                 {/* replaces <a> tag  */}
-                <Link to="/" classNName="navbar-logo">
-                  TRVL <i className="fab fa-typo3"></i>   
+                <Link to="/" classNName="navbar-logo" onClick={closeMobileMenu}>
+                  TRVL 
+                  <i className="fab fa-typo3" />   
                 </Link>
 
                 <div className="menu-icon" onClick={handleClick}>
@@ -40,17 +41,29 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                        <Link 
+                        to='/services' 
+                        className='nav-links' 
+                        onClick={closeMobileMenu}
+                        >
                         Services
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                        <Link 
+                        to='/products' 
+                        className='nav-links' 
+                        onClick={closeMobileMenu}
+                        >
                         Products
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                        <Link 
+                        to='/sign-up' 
+                        className='nav-links-mobile' 
+                        onClick={closeMobileMenu}
+                        >
                         Sign Up
                         </Link>
                     </li>
@@ -59,7 +72,7 @@ function Navbar() {
             </div>
         </nav>
     </>
-  )
+  );
 }
 
 export default Navbar; 
