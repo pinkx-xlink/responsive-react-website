@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -8,7 +8,7 @@ function Navbar() {
             <div className="navbar-conntainer">
                 {/* replaces <a> tag  */}
                 <Link to="/" classNName="navbar-logo">
-                  TRVL
+                  TRVL <i className="fab fa typo3"></i>   
                 </Link>
             </div>
         </nav>
